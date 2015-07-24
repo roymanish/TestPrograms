@@ -10,6 +10,6 @@
 8. Date Formatting Example
 9. Remove duplicates from string in place.
 10.Reverse Linked lIst Example
-11.Skipping Sum
-12.All possible combination in a string
+11.Skipping Sum.
+12.All possible combination in a string.
 13.All Tree traversal examples.
