@@ -11,13 +11,13 @@ import java.util.Queue;
  *
  */
 
-	public class InorderTraversal {
+	public class TreeTraversals {
 
 		Node prev;
 		static int maxHeight = 0;
 		public static void main(String[] args){					//          2
 																//      7       5
-			InorderTraversal it = new InorderTraversal();       //   2    6         9
+			TreeTraversals it = new TreeTraversals();       //   2    6         9
 			Node n1 = new Node(2);                              //      5   11    4
 																//                  12
 			Node n2 = new Node(7);								//Post Order : 2 5 11 6 7 4 9 5 2
@@ -42,12 +42,15 @@ import java.util.Queue;
 			n3.right = n6;
 			n6.left = n9;
 			
-			//n9.right = n10;
+			n9.right = n10;
 			
-			//it.inOrder(n1);
-			//it.getMaxHeight(n1, 0);
-			//System.out.println("Max Height:"+maxHeight);
+			System.out.println("Inorder Traversal : ");
+			it.inOrder(n1);
 			
+			it.getMaxHeight(n1, 0);
+			System.out.println("\nMax Height: "+maxHeight);
+			
+			System.out.println("Level Order Traversal : ");
 			levelOrderTraversal(n1);
 		}
 		
@@ -57,9 +60,10 @@ import java.util.Queue;
 		  if(root == null) return;
 		  
 		  inOrder( root.leftNode() );
-		  inOrder( root.rightNode() );
 		  
-		  System.out.println(root.getNodeValue());
+		  System.out.print(root.getNodeValue()+ " ");
+		  
+		  inOrder( root.rightNode() );
 		  
 		}
 		
@@ -84,7 +88,7 @@ import java.util.Queue;
 	        while(!queue.isEmpty())  
 	        {  
 	        	Node tempNode=queue.poll();  
-	            System.out.println(tempNode.getNodeValue());  
+	            System.out.print(tempNode.getNodeValue()+ " ");  
 	            if(tempNode.left!=null)  
 	                queue.add(tempNode.left);  
 	            if(tempNode.right!=null)  
