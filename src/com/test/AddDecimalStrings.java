@@ -29,29 +29,29 @@ public class AddDecimalStrings {
 		return output;
 	}
 
-private static String calculateSum(String num1, String num2){
-		
+	private static String calculateSum(String num1, String num2){
+
 		StringBuilder output = new StringBuilder();
 		int carry = 0;
 		for(int i = num1.length()-1;i>=0;i--){
-			
+
 			int n1 = num1.charAt(i)-'0';
 			int n2 = num2.charAt(i)-'0';
-			
+
 			int sum = n1+n2+carry;
 			carry = sum>=10 ? 1 : 0;
-			
+
 			output = output.append(sum);
 		}
-		
+
 		if(carry>0)
 			output.append(carry);
-		
+
 		return output.reverse().toString();
 	}
-	
+
 	private static String makeEqualLength(String num, int len){
-		
+
 		while(len>0){
 			num = "0"+num;
 			len--;

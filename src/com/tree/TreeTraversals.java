@@ -17,7 +17,7 @@ import java.util.Queue;
 		static int maxHeight = 0;
 		public static void main(String[] args){					//          2
 																//      7       5
-			TreeTraversals it = new TreeTraversals();       //   2    6         9
+			TreeTraversals it = new TreeTraversals();           //   2    6         9
 			Node n1 = new Node(2);                              //      5   11    4
 																//                  12
 			Node n2 = new Node(7);								//Post Order : 2 5 11 6 7 4 9 5 2

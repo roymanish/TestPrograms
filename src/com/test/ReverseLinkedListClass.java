@@ -22,7 +22,7 @@ public class ReverseLinkedListClass {
 		
 		ReverseLinkedListClass rllc = new ReverseLinkedListClass();
 		//Node rl = rllc.reverseLinkedList(n1);
-		Node rl = rllc.reverseLinkedListRecursively(n1,3);
+		Node rl = rllc.reverseLinkedListRecursively(n1);
 		
 		while(rl != null){
 			
@@ -48,17 +48,16 @@ public class ReverseLinkedListClass {
 		return head;
 	}
 	
-	public Node reverseLinkedListRecursively(Node head,int k){
+	public Node reverseLinkedListRecursively(Node head){
 		
 		if(head == null)
 			return null;
-		if(head.next == null||this.k==k)
+		if(head.next == null)
 			return head;
 		
 		Node secEle = head.next;
 		head.next = null;
-		this.k++;
-		Node reversed = reverseLinkedListRecursively(secEle,k);
+		Node reversed = reverseLinkedListRecursively(secEle);
 		
 		secEle.next = head;
 		
