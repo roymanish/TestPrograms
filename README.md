@@ -13,3 +13,8 @@
 11. Skipping Sum.
 12. All possible combination in a string
 13. All Tree traversal examples.
+14. Add binary numbers represented in a string.
+15. Add decimal numbers represented in a string.
+16. Find nearest perfect square for a input number.
+17. Formula one race problem asked in google interview.
+18. LRU Cache implementation.
