@@ -21,4 +21,7 @@ public class Node {
 	public Node leftNode() {return left;}
 	public Node rightNode() {return right;}
 	public int getNodeValue() {return nodeValue;}
+	public void setNodeValue(int nodeValue){
+		this.nodeValue = nodeValue;
+	}
 }

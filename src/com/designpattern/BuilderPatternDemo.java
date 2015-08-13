@@ -40,97 +40,65 @@ class User{
 		this.nationality = builder.nationality;
 	}
 
-
-
 	public String getFirstName() {
 		return firstName;
 	}
-
-
 
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
 
-
-
 	public String getLastName() {
 		return lastName;
 	}
-
-
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
 
-
-
 	public int getAge() {
 		return age;
 	}
-
-
 
 	public void setAge(int age) {
 		this.age = age;
 	}
 
-
-
 	public String getWeight() {
 		return weight;
 	}
-
-
 
 	public void setWeight(String weight) {
 		this.weight = weight;
 	}
 
-
-
 	public String getPhoneNumber() {
 		return phoneNumber;
 	}
-
-
 
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 
-
-
 	public String getCity() {
 		return city;
 	}
-
-
 
 	public void setCity(String city) {
 		this.city = city;
 	}
 
-
-
 	public String getOccupation() {
 		return occupation;
 	}
-
-
 
 	public void setOccupation(String occupation) {
 		this.occupation = occupation;
 	}
 
-
-
 	public String getNationality() {
 		return nationality;
 	}
-
-
 
 	public void setNationality(String nationality) {
 		this.nationality = nationality;
@@ -138,7 +106,6 @@ class User{
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return this.firstName+" "+this.lastName+" of age "+this.age+" lives in "+this.city;
 	}
 
